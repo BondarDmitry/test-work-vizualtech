@@ -1,0 +1,45 @@
+html, body {
+  font-size: 10px;
+}
+
+.container {
+  width: 114.5rem;
+  margin: 0 auto;
+
+  @include mq(lg) {
+    width: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.border {
+  width: 100%;
+  height: 0.4rem;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.info__text_gray {
+  color: $light-gray;
+  font-size: 1.3rem;
+  padding: 0.75rem 0;
+}
+
+.info__text_blue {
+  color: $dark-blue;
+}
+
+.mobile-only {
+  display: none;
+
+  @include mq(lg) {
+    display: block;
+  }
+}

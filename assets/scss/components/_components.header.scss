@@ -1,0 +1,87 @@
+.header {
+  background: $white;
+
+
+  .container {
+    position: relative;
+    padding: 8rem 0 4.5rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mq(s) {
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+
+
+    .logo {
+      position: absolute;
+      top: 0;
+      left: -2.5rem;
+      text-align: right;
+
+      @include mq(s) {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-bottom: 3rem;
+      }
+
+      &__head {
+        font-family: $ITCEDSCR;
+        font-size: 7.1rem;
+        padding: 1rem 0;
+        color: $gold;
+      }
+
+      &__text {
+        text-transform: uppercase;
+        color: $dark-blue;
+        font-family: $GOTHIC;
+        font-size: 2.3rem;
+        letter-spacing: 0.14em;
+      }
+    }
+
+    .connect {
+      margin-right: 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include mq(s) {
+        padding-bottom: 1rem;
+      }
+
+      @include mq(s) {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      &__text {
+        font-family: $Lucida-Grande;
+        font-size: 1.8rem;
+        color: $dark-blue;
+        margin: 0 1rem;
+      }
+
+      &__number {
+        font-family: $Futura;
+        font-size: 2.6rem;
+        color: $dark-blue;
+      }
+    }
+
+    .collection {
+      text-transform: uppercase;
+      color: $white;
+      padding: 1rem 1.5rem;
+      background-color: $dark-blue;
+      font-family: $Futura-Light;
+      font-size: 1.4rem;
+      border-radius: 0.2rem;
+    }
+  }
+}
